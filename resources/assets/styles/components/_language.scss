@@ -1,0 +1,19 @@
+// --
+// Language switcher
+// -------------------
+
+.header-widgets {
+  .language-switcher {
+    display: block;
+
+    ul {
+      display: flex;
+
+      li {
+        font-weight: 400;
+        line-height: 1.4;
+        color: $gray-500;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+
+//
+// Path to webfont icons
+//
+
+$uvigo-iconfont-font-path:  "~contrib-web-portalmp-iconfont/dist/fonts/" !default;
+
+//
+// Path to ElegantFont
+//
+
+$uvigoweb-font-path:  "~contrib-web-portalmp-frontend/fonts" !default;
+
+@import "~bootstrap/scss/functions";
+@import "~contrib-web-portalmp-frontend/scss/common/variables";
+@import "~contrib-web-portalmp-iconfont/dist/scss/uvigo-iconfont";
+@import "~bootstrap/scss/bootstrap";
+@import "~contrib-web-portalmp-frontend/scss/component";
+

@@ -1,0 +1,38 @@
+// TODO: .comment-list {}
+// TODO: .comment-list ol {}
+// TODO: .comment-form p {}
+// TODO: .comment-form input {}
+// TODO: .comment-form textarea {}
+
+.comments {
+  margin-top: 40px;
+}
+
+.comment-form {
+  input[type=text],
+  input[type=email],
+  input[type=url] {
+    @extend .form-control;
+  }
+
+  input[type=checkbox] {
+    @extend .form-check-input;
+  }
+
+  .comment-form-cookies-consent {
+    label {
+      @extend .form-check-label;
+    }
+  }
+
+  textarea {
+    @extend .form-control;
+  }
+
+  .form-submit {
+    input[type=submit] {
+      @extend .btn;
+      @extend .btn-primary;
+    }
+  }
+}

@@ -1,0 +1,155 @@
+// ---
+// Bloque de busca global
+
+/* stylelint-disable no-descending-specificity  */
+
+.widgetsearch {
+  position: absolute;
+  right: 34px;
+  top: -50%;
+
+  .globalsearch__form {
+    width: 0;
+    overflow: hidden;
+    display: block;
+    transition: width 0.2s;
+  }
+
+  .globalsearch__form__label {
+    width: 100%;
+    margin: 0;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  &.active {
+    .globalsearch__form {
+      width: 320px;
+      transition: width 0.4s;
+    }
+  }
+
+  .globalsearch__form__button {
+    display: none;
+  }
+}
+
+// Search form
+
+.globalsearch {
+  // position: absolute;
+  // top: 51px;
+  // right: 0;
+  // left: 0;
+  // z-index: 1;
+  height: 0;
+  overflow: hidden;
+  background-color: $primary;
+  transition: height 0.3s;
+
+  .close-button {
+    position: absolute;
+    top: 5px;
+    right: 22px;
+    display: none;
+    padding: 0;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+
+    &::before {
+      font-size: 3.1rem;
+    }
+  }
+
+  .globalsearch__form {
+    display: flex;
+    margin: 0;
+
+    .globalsearch__form__label {
+      display: block;
+      width: 100%;
+      margin: 0;
+    }
+
+    .form-control {
+      padding-right: 40px;
+      padding-left: 40px;
+      font-size: 1.375rem;
+      font-weight: 300;
+      color: $white;
+      letter-spacing: 1px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $gray-400;
+      box-shadow: none;
+
+      &::placeholder {
+        color: $white;
+      }
+    }
+
+    .btn {
+      padding-top: 1.05rem;
+      padding-bottom: 1.05rem;
+      margin-left: 20px;
+      border-color: $white;
+    }
+  }
+
+  &.active {
+    height: 140px;
+
+    .close-button {
+      display: block;
+    }
+  }
+
+  .globalsearch__content {
+    height: 100%;
+    padding: 40px 0;
+    border-bottom: 1px solid rgba($white, 0.4);
+  }
+}
+
+// ---
+// Botón apertura busca
+
+.globalsearch__toggle-button {
+  min-width: 21px;
+  padding: 0;
+  margin-left: 2rem;
+  color: $primary;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  &::before {
+    font-size: 1.375rem;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $secondary;
+    box-shadow: none;
+  }
+}
+
+.widget_search {
+  position: relative;
+}
+
+.search-text {
+  &::before {
+    content: "\"";
+  }
+
+  &::after {
+    content: "\"";
+  }
+}
+
+/* stylelint-enable */

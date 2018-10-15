@@ -1,0 +1,42 @@
+
+.sidebar-management {
+  .sidebar_del {
+    color: #0073aa;
+    font-size: 15px;
+
+    &:hover {
+      color: #d00;
+    }
+  }
+
+  .sidebar-management__list {
+    margin: 20px 0 0;
+    background-color: #e8e8e8;
+
+    p {
+      padding: 10px;
+      color: #888;
+    }
+
+    ul {
+      margin: 0 0 0 30px;
+      padding: 8px 0;
+      list-style-type: disc;
+
+      li {
+        margin: 8px 0;
+      }
+    }
+  }
+}
+
+.text-right-button {
+  display: none;
+  line-height: 30px;
+  height: 30px;
+  margin-left: 8px;
+
+  &.active {
+    display: inline-block;
+  }
+}

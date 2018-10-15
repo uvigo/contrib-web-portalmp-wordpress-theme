@@ -1,0 +1,92 @@
+/**
+ * WordPress Generated Classes
+ * @see http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+ */
+
+/** Media alignment */
+.alignnone {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.aligncenter {
+  display: block;
+  margin: ($spacer * 2) auto;
+  height: auto;
+}
+
+.alignleft,
+.alignright {
+  margin-bottom: ($spacer * 3);
+  height: auto;
+}
+
+@media (min-width: 30rem) {
+  .alignleft {
+    float: left;
+    margin-right: ($spacer * 4);
+    margin-top: 5px; // gap when image starts in first paragraph line
+  }
+
+  .alignright {
+    float: right;
+    margin-left: ($spacer * 4);
+    margin-top: 5px; // gap when image starts in first paragraph line
+  }
+}
+
+/** Captions */
+
+.wp-caption {
+  text-align: left;
+
+  &.alignright {
+    text-align: right;
+  }
+
+  &.aligncenter {
+    max-width: 100%;
+  }
+
+  img {
+    height: auto;
+    width: auto;
+  }
+
+  .wp-caption-text {
+    padding: 0.75rem 0.5rem;
+    font-size: $h6-font-size;
+    color: $gray-500;
+    letter-spacing: 1px;
+    font-weight: 400;
+
+    strong {
+      font-weight: 500;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+}
+
+/** Text meant only for screen readers */
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  color: #000;
+  background: #fff;
+}

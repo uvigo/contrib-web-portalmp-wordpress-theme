@@ -1,0 +1,18 @@
+@import "common/variables";
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+// @import "~some-node-module";
+
+/** Import theme styles */
+@import "~contrib-web-portalmp-frontend/scss/component/post";
+@import "~contrib-web-portalmp-frontend/scss/component/page";
+@import "~contrib-web-portalmp-frontend/scss/component/floor";
+@import "tinymce/tinymce";

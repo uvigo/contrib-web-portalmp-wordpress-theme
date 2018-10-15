@@ -1,0 +1,586 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: UVigo Multipurpose WordPress Theme\n"
+"POT-Creation-Date: 2018-07-26 17:59+0200\n"
+"PO-Revision-Date: 2018-07-26 18:05+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: gl_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.9\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: views/404.blade.php:8
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr "Sentímolo pero a páxina que está tratando de ver non existe."
+
+#: views/archive-uvigo-offer.blade.php:8 views/home.blade.php:8
+#: views/index.blade.php:8 views/search.blade.php:8
+#: views/taxonomy-uvigo-groupevent.blade.php:8
+msgid "Sorry, no results were found."
+msgstr "Sentímolo, pero non se atopou ningún resultado."
+
+#: views/partials/comments.blade.php:10
+msgctxt "comments title"
+msgid "One response to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s responses to &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: views/partials/comments.blade.php:21
+msgid "&larr; Older comments"
+msgstr "&larr; Comentarios antigos"
+
+#: views/partials/comments.blade.php:24
+msgid "Newer comments &rarr;"
+msgstr "Comentarios recentes &rarr;"
+
+#: views/partials/comments.blade.php:33
+msgid "Comments are closed."
+msgstr "Os comentarios están pechados."
+
+#: views/partials/content-page.blade.php:17
+#: views/partials/content-single-uvigo-inv-group.blade.php:61
+#: views/partials/content-single-uvigo-inv-staff.blade.php:39
+#: views/partials/content-single.blade.php:21
+msgid "Pages:"
+msgstr "Páxinas:"
+
+#: views/partials/content-single-uvigo-inv-group.blade.php:18
+msgid "General Data"
+msgstr "Datos xerais"
+
+#: views/partials/content-single-uvigo-inv-group.blade.php:20
+msgid "Coordinator"
+msgstr "Coordinador"
+
+#: views/partials/content-single-uvigo-inv-group.blade.php:24
+msgid "Date"
+msgstr "Data"
+
+#: views/partials/content-single-uvigo-inv-group.blade.php:28
+msgid "Code"
+msgstr "Código"
+
+#: views/partials/content-single-uvigo-inv-group.blade.php:33
+msgid "Contact Data"
+msgstr "Datos de contacto"
+
+#: views/partials/content-single-uvigo-inv-group.blade.php:35
+msgid "Address"
+msgstr "Enderezo"
+
+#: views/partials/content-single-uvigo-inv-group.blade.php:39
+msgid "Phone"
+msgstr "Teléfono"
+
+#: views/partials/content-single-uvigo-inv-group.blade.php:43
+#: views/partials/content-single-uvigo-inv-staff.blade.php:31
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: views/partials/content-single-uvigo-inv-group.blade.php:47
+msgid "Web"
+msgstr ""
+
+#: views/partials/content-single-uvigo-inv-group.blade.php:52
+msgid "Technological Offer"
+msgstr "Oferta tecnolóxica"
+
+#: views/partials/content-single-uvigo-inv-staff.blade.php:17
+msgid "Personal Data"
+msgstr ""
+
+#: views/partials/content-single-uvigo-inv-staff.blade.php:19
+msgid "Department"
+msgstr "Departamento"
+
+#: views/partials/content-single-uvigo-inv-staff.blade.php:23
+msgid "Center"
+msgstr "Centrado"
+
+#: views/partials/content-single-uvigo-inv-staff.blade.php:27
+msgid "Area"
+msgstr "Área"
+
+#: views/partials/entry-tax.blade.php:2
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: views/partials/entry-tax.blade.php:3
+msgid "Spectators"
+msgstr "Público"
+
+#: views/partials/entry-tax.blade.php:4
+msgid "Universes"
+msgstr "Universos"
+
+#: views/partials/entry-tax.blade.php:5
+msgid "Geographic"
+msgstr "Ámbito Xeográfico"
+
+#: views/partials/header-bottom.blade.php:18
+#: views/partials/header-uvigo.blade.php:26
+msgid "Menu"
+msgstr "Menú"
+
+#: views/partials/header-uvigo.blade.php:21
+#: views/partials/searchform.blade.php:8 views/partials/searchform.blade.php:12
+msgid "Search"
+msgstr "Buscar"
+
+#: views/partials/header.blade.php:7 app/widgets/widget-menu.php:49
+#: app/wordpress/gallery.php:206 app/wordpress/gallery.php:207
+msgid "Close"
+msgstr "Pechar"
+
+#: views/partials/searchform.blade.php:4
+msgid "Search for:"
+msgstr "Buscar por:"
+
+#: views/shortcodes/featured-old.blade.php:3
+#: views/shortcodes/featured.blade.php:3
+msgid "News"
+msgstr "Actualidade"
+
+#: views/shortcodes/groupevents.blade.php:4
+msgid "Next conference"
+msgstr "Próxima conferencia"
+
+#: views/shortcodes/uvresearch.blade.php:6
+#: templates/uvigo-research/uvigo-research-uvresearch.php:6
+msgid "Research lines"
+msgstr "Liñas de Investigación"
+
+#: app/admin/customizer.php:27
+msgid "Social networks"
+msgstr "Redes Sociais"
+
+#: app/admin/customizer.php:32
+msgid "Facebook"
+msgstr ""
+
+#: app/admin/customizer.php:39
+msgid "Twitter"
+msgstr ""
+
+#: app/admin/customizer.php:46
+msgid "Instagram"
+msgstr ""
+
+#: app/admin/customizer.php:53
+msgid "Youtube"
+msgstr ""
+
+#: app/admin/customizer.php:60
+msgid "Linkedin"
+msgstr ""
+
+#: app/admin/customizer.php:73
+msgid "Logo mobile"
+msgstr "Logo móbil"
+
+#: app/admin/settings.php:9
+msgid "Custom sidebars"
+msgstr "Barras laterais personalizadas"
+
+#: app/admin/settings.php:17
+msgid "Sidebars items"
+msgstr "Elementos de barra lateral"
+
+#: app/admin/settings.php:18
+msgid "Sidebar name"
+msgstr "Nome de barra lateral"
+
+#: app/admin/settings.php:30
+msgid "Sidebars management"
+msgstr "Xestión de barras laterais"
+
+#: app/admin/settings.php:31
+msgid "Manage custom new sidebar items."
+msgstr "Xestionar novos elementos da barra lateral."
+
+#: app/admin/settings.php:40
+msgid "Save Changes"
+msgstr "Gardar Cambios"
+
+#: app/admin/settings.php:88
+msgid "Insert new custom sidebar name"
+msgstr "Introduce nome da barra lateral"
+
+#: app/admin/settings.php:89
+msgid "Add custom sidebar"
+msgstr "Engadir barra lateral personalizada"
+
+#: app/admin/settings.php:102
+msgid "Delete sidebar"
+msgstr "Eliminar barra lateral"
+
+#: app/admin/settings.php:129
+msgid "User can add and remove custom sidebars."
+msgstr "O usuario pode engadir e eliminar barras laterais."
+
+#: app/admin/sidebars.php:15
+msgid "Aditional sidebar"
+msgstr "Barra lateral adicional"
+
+#: app/admin/sidebars.php:17 app/admin/sidebars.php:44
+#: app/admin/sidebars.php:72
+msgid "None"
+msgstr "Ningún"
+
+#: app/admin/sidebars.php:42 app/admin/sidebars.php:69
+#: app/admin/sidebars.php:137
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+#: app/admin/sidebars.php:71
+msgid "&mdash; No Change &mdash;"
+msgstr "&mdash; Sen cambios &mdash;"
+
+#: app/admin/slider.php:16
+msgctxt "taxonomy general name"
+msgid "Types Sliders"
+msgstr "Tipos Sliders"
+
+#: app/admin/slider.php:17
+msgctxt "taxonomy singular name"
+msgid "Type slider"
+msgstr "Tipo Slider"
+
+#: app/admin/slider.php:18
+msgid "Search Type slider"
+msgstr "Buscar tipo slider"
+
+#: app/admin/slider.php:19
+msgid "All Type slider"
+msgstr "Todos os tipos de sliders"
+
+#: app/admin/slider.php:20
+msgid "Parent Type slider"
+msgstr ""
+
+#: app/admin/slider.php:21
+msgid "Parent Type slider:"
+msgstr ""
+
+#: app/admin/slider.php:22
+msgid "Edit Type slider"
+msgstr "Editar tipo de slider"
+
+#: app/admin/slider.php:23
+msgid "Update Type slider"
+msgstr "Actualizar tipo de slider"
+
+#: app/admin/slider.php:24
+msgid "Add New Type slider"
+msgstr "Engadir novo tipo de slider"
+
+#: app/admin/slider.php:25
+msgid "New Type slider Name"
+msgstr "Nome novo tipo de slider"
+
+#: app/admin/slider.php:26
+msgid "Type slider"
+msgstr "Tipo slider"
+
+#: app/admin/slider.php:57
+msgctxt "post type general name"
+msgid "Sliders"
+msgstr "Sliders"
+
+#: app/admin/slider.php:58
+msgctxt "post type singular name"
+msgid "Slider"
+msgstr "Slider"
+
+#: app/admin/slider.php:59
+msgctxt "admin menu"
+msgid "Sliders"
+msgstr "Sliders"
+
+#: app/admin/slider.php:60
+msgctxt "add new on admin bar"
+msgid "Sliders"
+msgstr "Engadir novo Slider"
+
+#: app/admin/slider.php:61
+msgctxt "slider"
+msgid "Add new"
+msgstr "Engadir novo"
+
+#: app/admin/slider.php:62
+msgid "Add new slider"
+msgstr "Engadir novo slider"
+
+#: app/admin/slider.php:63
+msgid "New slider"
+msgstr "Novo slider"
+
+#: app/admin/slider.php:64
+msgid "Edit slider"
+msgstr "Editar slider"
+
+#: app/admin/slider.php:65
+msgid "View slider"
+msgstr "Ver slider"
+
+#: app/admin/slider.php:66
+msgid "All sliders"
+msgstr "Todos os sliders"
+
+#: app/admin/slider.php:67
+msgid "Search sliders"
+msgstr "Buscar slider"
+
+#: app/admin/slider.php:68
+msgid "Parent slider:"
+msgstr "Slider Pai:"
+
+#: app/admin/slider.php:69
+msgid "Sliders not found."
+msgstr "Non se atopou ningún slider."
+
+#: app/admin/slider.php:70
+msgid "Sliders not found in trash."
+msgstr "Non se atopou ningún slider no lixo."
+
+#: app/admin/slider.php:75
+msgid "Sliders."
+msgstr "Sliders."
+
+#: app/admin/widgets-classname.php:20
+msgid "Widget Classname: "
+msgstr "Widget classname: "
+
+#: app/admin/widgets-classname.php:35
+msgid "Box type:"
+msgstr "Tipo de caixa:"
+
+#: app/admin/widgets-classname.php:41
+msgid "Default"
+msgstr "Por defecto"
+
+#: app/admin/widgets-classname.php:42
+msgid "Gray block"
+msgstr "Bloque gris"
+
+#: app/admin/widgets-classname.php:43
+msgid "Blue block"
+msgstr "Bloque azul"
+
+#: app/admin/widgets-classname.php:44
+msgid "Dark Blue block"
+msgstr "Bloque azul oscuro"
+
+#: app/controllers/app.php:29
+msgid "Latest Posts"
+msgstr "Últimos posts"
+
+#: app/controllers/app.php:35
+#, php-format
+msgid "Search Results for %s"
+msgstr "Resultados para %s"
+
+#: app/controllers/app.php:38
+msgid "Not Found"
+msgstr "Non atopado"
+
+#: app/filters.php:71
+msgid "Continued"
+msgstr "Continuar"
+
+#: app/filters.php:213
+msgid "New"
+msgstr "Nova"
+
+#: app/setup.php:62
+msgid "Primary Navigation"
+msgstr "Navegación principal"
+
+#: app/setup.php:125
+msgid "Primary"
+msgstr "Principal"
+
+#: app/setup.php:129
+msgid "Header"
+msgstr "Cabeceira"
+
+#: app/setup.php:133
+msgid "Footer"
+msgstr "Pé de páxina"
+
+#: app/setup.php:141
+msgid "Sponsor"
+msgstr "Patrocinador"
+
+#: app/setup.php:150
+msgid "Home Sidebar"
+msgstr "Barra lateral da Home"
+
+#: app/setup.php:162
+msgid "Custom sidebar created by user."
+msgstr "Barra lateral creada por usuario."
+
+#: app/widgets/widget-groupevent.php:17
+msgid "Widget for GroupEvent"
+msgstr "Widget para grupos de eventos."
+
+#: app/widgets/widget-groupevent.php:19
+msgid "Group event"
+msgstr "Grupo de evento"
+
+#: app/widgets/widget-groupevent.php:53 app/widgets/widget-menu.php:79
+#: app/widgets/widget-social.php:59
+msgid "Title:"
+msgstr "Título:"
+
+#: app/widgets/widget-menu.php:17
+msgid "Secondary menu for sidebar column."
+msgstr "Menú secundario para a columna lateral."
+
+#: app/widgets/widget-menu.php:19
+msgid "Sidebar menu"
+msgstr "Menú de barra lateral"
+
+#: app/widgets/widget-menu.php:46
+msgid "Navigation"
+msgstr "Navegación"
+
+#: app/widgets/widget-social.php:17
+msgid "Define social networks on your site."
+msgstr "Define as redes sociais do sitio."
+
+#: app/widgets/widget-social.php:19
+msgid "Social Networks"
+msgstr "Redes Sociais"
+
+#: app/widgets/widget-social.php:63
+msgid "Classname:"
+msgstr "Classname:"
+
+#: app/wordpress/gallery.php:128 app/wordpress/gallery.php:167
+#: app/wordpress/menu-walker.php:120
+msgid "Open"
+msgstr "Abrir"
+
+#: app/wordpress/gallery.php:136 app/wordpress/gallery.php:231
+msgid "Download"
+msgstr "Descargar"
+
+#: functions.php:24
+msgid "Sage &rsaquo; Error"
+msgstr ""
+
+#: functions.php:34
+msgid "You must be using PHP 7 or greater."
+msgstr "É necesario PHP 7 ou superior."
+
+#: functions.php:34
+msgid "Invalid PHP version"
+msgstr "Versión PHP inválida"
+
+#: functions.php:41
+msgid "You must be using WordPress 4.9.0 or greater."
+msgstr "É necesario usar Wordpress 4.9.0 ou superior."
+
+#: functions.php:41
+msgid "Invalid WordPress version"
+msgstr "Versión Wordpress inválida"
+
+#: functions.php:66
+msgid "You must run <code>composer install</code> from the Sage directory."
+msgstr "Debe executar <code>composer install</code> dende o directorio Sage."
+
+#: functions.php:67
+msgid "Autoloader not found."
+msgstr ""
+
+#: functions.php:88
+#, php-format
+msgid "Error locating <code>%s</code> for inclusion."
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "UVigo Multipurpose WordPress Theme"
+msgstr "Theme multipropósito para a UVigo"
+
+#. Theme URI of the plugin/theme
+msgid "https://uvigo.gal/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Theme multipropósito para WordPress da Universidade de Vigo"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "IdeiT"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://ideit.es/"
+msgstr ""
+
+#~ msgid "Data"
+#~ msgstr "Datos"
+
+#~ msgid "Centros de Investigación Universidade de Vigo Theme"
+#~ msgstr "Tema para os Centros de Investigación Universidade de Vigo"
+
+#~ msgid "Theme for Uvigo"
+#~ msgstr "Tema para Universidade de Vigo"
+
+#~ msgctxt "taxonomy general name"
+#~ msgid "Research lines"
+#~ msgstr "Liñas de Investigación"
+
+#~ msgctxt "taxonomy singular name"
+#~ msgid "Research line"
+#~ msgstr "Liña investigación"
+
+#~ msgid "Search Research line"
+#~ msgstr "Buscar liña de investigación"
+
+#~ msgid "All Research line"
+#~ msgstr "Todas as liñas de investigación"
+
+#~ msgid "Edit Research line"
+#~ msgstr "Editar liña de investigación"
+
+#~ msgid "Update Research line"
+#~ msgstr "Actualizar liña de investigación"
+
+#~ msgid "Add New Research line"
+#~ msgstr "Engadir nova liña de investigación"
+
+#~ msgid "New Research line Name"
+#~ msgstr "Nome nova liña de investigación"
+
+#~ msgid "Research line"
+#~ msgstr "Liña Investigación"
+
+#~ msgid "Image"
+#~ msgstr "Imaxe"
+
+#~ msgid "Set image"
+#~ msgstr "Establecer imaxe"
+
+#~ msgid "Remove image"
+#~ msgstr "Eliminar imaxe"
+
+#~ msgid "Research lines 2"
+#~ msgstr "Liñas de Investigación 2"
+
+#~ msgid "Set icon"
+#~ msgstr "Establecer Im"

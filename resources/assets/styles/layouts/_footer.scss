@@ -1,0 +1,149 @@
+
+
+.content-info {
+  background-color: $gray-200;
+}
+
+.footer-items {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+
+  .widget {
+    margin-bottom: 1.875rem;
+  }
+
+  .widgetbox {
+    padding: 0;
+  }
+
+  .footer-column + .footer-column {
+    margin-top: 1.875rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    @include make-row();
+
+    justify-content: space-between;
+
+    .widget {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @include make-col(6);
+      // &.column-social,
+      // &.column-menu {
+      //   // @include make-col(12);
+      // }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    justify-content: space-between;
+
+    .widget {
+      @include make-col(4);
+
+      margin-bottom: 0;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    justify-content: space-between;
+
+    .widget {
+      @include make-col(4);
+
+      &.column-logo {
+        @include make-col(3);
+      }
+
+      &.column-social {
+        @include make-col(3);
+      }
+
+      &.column-address {
+        @include make-col(6);
+
+        .footer-column + .footer-column {
+          margin-top: 0;
+        }
+
+        .custom-html-widget {
+          display: flex;
+          justify-content: space-between;
+
+          .footer-column {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  /* ---------- */
+  // .widget_custom_html {
+  //   @include media-breakpoint-up(lg) {
+  //     padding-left: 22px;
+  //   }
+  // }
+
+  .contact {
+    a {
+      text-transform: uppercase;
+    }
+  }
+
+  .textwidget {
+    p {
+      color: $primary;
+      font-size: 1rem;
+      font-weight: 300;
+      margin: 0 0 0 1.625rem;
+
+      @include media-breakpoint-up(lg) {
+        margin-left: 0;
+      }
+    }
+
+    .elegant-icon {
+      position: absolute;
+      margin-left: -1.625rem;
+      font-size: 1.375rem;
+    }
+  }
+
+  .social-link-block {
+    @include media-breakpoint-up(lg) {
+      text-align: right;
+    }
+  }
+
+  .widget_nav_menu {
+    @extend .footer-alt-menu;
+
+    ul {
+      a {
+        color: $primary;
+      }
+    }
+  }
+
+  .column-menu {
+    margin-bottom: 0;
+    margin-top: 0;
+
+    ul {
+      margin-left: 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      margin: 0;
+      bottom: 30px;
+      right: 0;
+    }
+  }
+}
