@@ -142,18 +142,10 @@ add_shortcode('uvigo_featured', function ($atts) {
         ];
     }
 
-    // Recollemos os datos da estación de Toralla
-    $items[] = [
-        'type' => 'toralla',
-        'date' => new \DateTime(),
-        'html' => do_shortcode('[uvigo_toralla template="toralla-block"]'),
-    ];
-
     sage('blade')->share('featured_list', $items);
     $template = locate_template('shortcodes/featured');
     $output = template($template);
 
-    // print_r($items);
     return $output;
 });
 
