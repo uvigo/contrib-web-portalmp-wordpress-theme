@@ -159,8 +159,6 @@
   "dependencies": {
     "contrib-web-portalmp-frontend": "github:uvigo/contrib-web-portalmp-frontend",
     "font-awesome": "~4.7",
-    "jquery": "1.12.4 - 3",
-    "popper.js": "^1.14.3",
-    "slick-carousel": "^1.8.1"
+    "jquery": "1.12.4 - 3"
   }
 }
