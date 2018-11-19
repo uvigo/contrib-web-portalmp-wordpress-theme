@@ -1,3 +1,6 @@
+### 1.3.2: October 19th, 2018
+* Correct compilation and deployment.
+
 ### 1.3.1: October 15th, 2018
 * Update contrib-web-portalmp-frontend to version 1.1.1
 * Remove author and add type in entry meta.
