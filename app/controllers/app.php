@@ -116,7 +116,6 @@ class UVigoThemeWPApp extends Controller
                 if ($subjects_root_page_id) {
                     $post_id = $post->ID;
                     $actual_title = $post->post_title;
-
                     $ancestors = get_post_ancestors($subjects_root_page_id);
                     array_unshift($ancestors, get_post($subjects_root_page_id));
                 }
@@ -128,7 +127,7 @@ class UVigoThemeWPApp extends Controller
         } else {
             if (is_tax('research')) {
                 $term = get_queried_object();
-                $post_id = 223;
+                $post_id = get_option('ciuvigo_researchlines_page');
                 $actual_title = $term->name;
                 $ancestors = get_post_ancestors($post_id);
                 array_unshift($ancestors, get_page(223));
@@ -141,9 +140,17 @@ class UVigoThemeWPApp extends Controller
             $output .= '<ol class="breadcrumb">';
             if (! empty($ancestors)) {
                 $ancestors = array_reverse($ancestors);
-
                 foreach ($ancestors as $ancestor) {
-                    $output .= '<li class="breadcrumb-item"><a href="' . get_permalink($ancestor) . '">' . get_the_title($ancestor) . '</a></li>';
+                    $link = '';
+                    $title = '';
+                    if (is_a($ancestor, 'WP_Post') || is_numeric($ancestor)) {
+                        $link = get_permalink($ancestor);
+                        $title = get_the_title($ancestor);
+                    } else {
+                        $link = $ancestor['link'];
+                        $title = $ancestor['title'];
+                    }
+                    $output .= '<li class="breadcrumb-item"><a href="' . esc_url($link) . '">' . $title . '</a></li>';
                 }
             }
             if ($actual_title) {
@@ -155,6 +162,7 @@ class UVigoThemeWPApp extends Controller
 
          // filter to change de breadcrumb.
         $output = apply_filters('uvigothemewp/breadcrumb', $output, $post);
+
         echo $output;
     }
 
@@ -303,6 +311,8 @@ class UVigoThemeWPApp extends Controller
     public static function getSidebarUsed()
     {
         if (is_home()) {
+            dynamic_sidebar('sidebar-home');
+        } elseif (is_singular('post', 'uvigo-event')) {
             dynamic_sidebar('sidebar-home');
         } elseif (is_tax('uvigo-groupevent')) {
             dynamic_sidebar('sidebar-home');
