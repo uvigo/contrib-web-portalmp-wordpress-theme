@@ -339,4 +339,77 @@ class UVigoThemeWPApp extends Controller
             echo get_the_post_thumbnail(null, $size, $attr);
         }
     }
+
+    public static function hasEmbed($post_id = false)
+    {
+        if (!$post_id) {
+            $post_id = get_the_ID();
+        } else {
+            $post_id = absint($post_id);
+        }
+
+        if (!$post_id) {
+            return false;
+        }
+
+        $post_meta = get_post_custom_keys($post_id);
+
+        foreach ($post_meta as $meta) {
+            if ('_oembed' != substr(trim($meta), 0, 7)) {
+                continue;
+            }
+            return true;
+        }
+
+        return false;
+    }
+
+    public static function hasFeaturedVideo($post_id = false)
+    {
+        if (!$post_id) {
+            $post_id = get_the_ID();
+        } else {
+            $post_id = absint($post_id);
+        }
+
+        if (!$post_id) {
+            return false;
+        }
+
+        $post_meta = get_post_custom_keys($post_id);
+
+        foreach ($post_meta as $meta) {
+            if ('uvigo_featured_video_url' != trim($meta)) {
+                continue;
+            } elseif (empty(get_post_meta($post_id, 'uvigo_featured_video_url', true))) {
+                continue;
+            }
+            return true;
+        }
+
+        return false;
+    }
+
+    public static function renderFeaturedVideo($post_id = false)
+    {
+        if (!$post_id) {
+            $post_id = get_the_ID();
+        } else {
+            $post_id = absint($post_id);
+        }
+
+        if (!$post_id) {
+            return false;
+        }
+
+        $url_embed = get_post_meta($post_id, 'uvigo_featured_video_url', true);
+
+        global $wp_embed;
+        $embed_code = $wp_embed->run_shortcode('[embed width="500"]' . $url_embed . '[/embed]');
+
+        // $embed_code = wp_oembed_get($url_embed, ['width' => 500]);
+        // $embed_code = do_shortcode('[embed width="500"]' . $url_embed . '[/embed]');
+
+        return $embed_code;
+    }
 }
