@@ -228,6 +228,19 @@ add_filter('wp_nav_menu_objects', function ($sorted_menu_items, $args) {
             }
         }
 
+        // Páxinas que
+        if (is_page() && empty($parent_menu_item_id)) {
+            $current_page = get_queried_object();
+            if ($current_page->post_parent > 0) {
+                $parent_page_id = $current_page->post_parent;
+                foreach ($sorted_menu_items as $key => $menu_item) {
+                    if ($menu_item->object == 'page' && $menu_item->object_id == $parent_page_id) {
+                        $parent_menu_item_id = $menu_item->ID;
+                    }
+                }
+            }
+        }
+
         if ($parent_menu_item_id) {
             $children = submenu_get_children_ids($parent_menu_item_id, $sorted_menu_items);
             array_unshift($children, $parent_menu_item_id);
