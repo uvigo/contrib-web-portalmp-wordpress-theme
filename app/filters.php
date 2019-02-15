@@ -160,6 +160,15 @@ add_filter('wp_nav_menu_objects', function ($sorted_menu_items, $args) {
             }
         }
 
+        function find_by_object_id($items, $object_id)
+        {
+            $items = wp_filter_object_list($items, array('object_id' => $object_id), 'and');
+            if (!empty($items)) {
+                return array_values($items)[0];
+            }
+            return null;
+        }
+
         if (is_tax('research')
             || is_singular('uvigo-inv-group')
             || is_singular('uvigo-inv-staff')) {
@@ -177,15 +186,6 @@ add_filter('wp_nav_menu_objects', function ($sorted_menu_items, $args) {
         }
 
         if (is_singular(['uvigo-subject'])) {
-
-            function find_by_object_id($items, $object_id)
-            {
-                $items = wp_filter_object_list($items, array('object_id' => $object_id), 'and');
-                if (!empty($items)) {
-                    return array_values($items)[0];
-                }
-                return null;
-            }
 
             //titulacion
             $subjects_root_page_id = apply_filters('uvigo_teaching_certification_subjects_root_page', null, get_the_ID());
