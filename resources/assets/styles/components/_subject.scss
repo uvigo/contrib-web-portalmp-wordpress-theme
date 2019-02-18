@@ -21,8 +21,13 @@ article.uvigo-subject {
         ul,
         dl {
           list-style: none;
-          margin: 0 0 10px 0;
-          padding: 0 0 0 10px;
+          margin: 0;
+          padding: 0;
+
+          &.uvigo_subjects {
+            margin-bottom: 10px;
+            padding-left: 10px;
+          }
         }
       }
 
