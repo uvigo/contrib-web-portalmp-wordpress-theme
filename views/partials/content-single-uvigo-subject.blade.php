@@ -89,21 +89,11 @@
         @endif
         </span>
     </div>
-    @php( $responsible_teacher_id = get_field('uvigo_teaching_subject_responsible_teacher') )
-    @if ( $responsible_teacher_id )
+    @php( $responsible_teachers = get_field('uvigo_teaching_subject_list_responsible_teacher') )
+    @if ( $responsible_teachers )
     <div class="field">
       <span class="field__label">{{ __('Responsible teachers', 'uvigothemewp') }}: </span>
-      <span class="field__item">
-          <a href="{{ get_permalink( $responsible_teacher_id ) }}" target="_blank">{{ get_the_title( $responsible_teacher_id ) }}</a>
-      </span>
-    </div>
-    @endif
-
-    @php( $teachers = get_field('uvigo_teaching_subject_list_ids_pids') )
-    @if ( $teachers )
-    <div class="field">
-      <span class="field__label">{{ __('Teachers', 'uvigothemewp') }}: </span>
-      <span class="field__item">{!! do_shortcode('[uvigo_teachers template="list" id_subject=' . get_the_ID() . ' ][/uvigo_teachers]') !!}</span>
+      <span class="field__item">{!! do_shortcode('[uvigo_teachers template="list" mode="responsible" id_subject=' . get_the_ID() . ' ][/uvigo_teachers]') !!}</span>
     </div>
     @endif
 
