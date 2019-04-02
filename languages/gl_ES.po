@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: UVigo Multipurpose WordPress Theme\n"
-"POT-Creation-Date: 2018-07-26 17:59+0200\n"
-"PO-Revision-Date: 2018-07-26 18:05+0200\n"
+"POT-Creation-Date: 2019-02-15 15:01+0100\n"
+"PO-Revision-Date: 2019-02-15 15:01+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: gl_ES\n"
@@ -53,6 +53,7 @@ msgstr "Os comentarios están pechados."
 #: views/partials/content-page.blade.php:17
 #: views/partials/content-single-uvigo-inv-group.blade.php:61
 #: views/partials/content-single-uvigo-inv-staff.blade.php:39
+#: views/partials/content-single-uvigo-offer.blade.php:28
 #: views/partials/content-single.blade.php:21
 msgid "Pages:"
 msgstr "Páxinas:"
@@ -70,10 +71,12 @@ msgid "Date"
 msgstr "Data"
 
 #: views/partials/content-single-uvigo-inv-group.blade.php:28
+#: views/partials/content-single-uvigo-subject.blade.php:19
 msgid "Code"
 msgstr "Código"
 
 #: views/partials/content-single-uvigo-inv-group.blade.php:33
+#: views/partials/content-single-uvigo-teacher.blade.php:56
 msgid "Contact Data"
 msgstr "Datos de contacto"
 
@@ -82,15 +85,18 @@ msgid "Address"
 msgstr "Enderezo"
 
 #: views/partials/content-single-uvigo-inv-group.blade.php:39
+#: views/partials/content-single-uvigo-teacher.blade.php:62
 msgid "Phone"
 msgstr "Teléfono"
 
 #: views/partials/content-single-uvigo-inv-group.blade.php:43
 #: views/partials/content-single-uvigo-inv-staff.blade.php:31
+#: views/partials/content-single-uvigo-teacher.blade.php:66
 msgid "Email"
 msgstr "Correo electrónico"
 
 #: views/partials/content-single-uvigo-inv-group.blade.php:47
+#: views/partials/content-single-uvigo-subject.blade.php:83
 msgid "Web"
 msgstr ""
 
@@ -103,16 +109,109 @@ msgid "Personal Data"
 msgstr ""
 
 #: views/partials/content-single-uvigo-inv-staff.blade.php:19
+#: views/partials/content-single-uvigo-subject.blade.php:79
+#: views/partials/content-single-uvigo-teacher.blade.php:23
 msgid "Department"
 msgstr "Departamento"
 
 #: views/partials/content-single-uvigo-inv-staff.blade.php:23
+#: views/partials/content-single-uvigo-subject.blade.php:31
 msgid "Center"
 msgstr "Centrado"
 
 #: views/partials/content-single-uvigo-inv-staff.blade.php:27
+#: views/partials/content-single-uvigo-teacher.blade.php:27
 msgid "Area"
 msgstr "Área"
+
+#: views/partials/content-single-uvigo-subject.blade.php:23
+msgid "Acronym"
+msgstr "Acrónimo"
+
+#: views/partials/content-single-uvigo-subject.blade.php:27
+msgid "Name"
+msgstr "Nome"
+
+#: views/partials/content-single-uvigo-subject.blade.php:35
+msgid "Certification"
+msgstr "Titulación"
+
+#: views/partials/content-single-uvigo-subject.blade.php:39
+msgid "Course"
+msgstr "Curso"
+
+#: views/partials/content-single-uvigo-subject.blade.php:48
+msgid "Period"
+msgstr "Período"
+
+#: views/partials/content-single-uvigo-subject.blade.php:57
+#: views/partials/content-single-uvigo-teacher.blade.php:19
+msgid "Type"
+msgstr "Tipo"
+
+#: views/partials/content-single-uvigo-subject.blade.php:66
+msgid "Credits"
+msgstr "Créditos"
+
+#: views/partials/content-single-uvigo-subject.blade.php:75
+msgid "Learning outcomes"
+msgstr "Resultados de aprendizaxe"
+
+#: views/partials/content-single-uvigo-subject.blade.php:94
+msgid "Responsible teachers"
+msgstr "Profesor responsable"
+
+#: views/partials/content-single-uvigo-subject.blade.php:104
+msgid "Teachers"
+msgstr "Profesorado"
+
+#: views/partials/content-single-uvigo-subject.blade.php:110
+msgid "Teaching guide"
+msgstr "Guía docente"
+
+#: views/partials/content-single-uvigo-subject.blade.php:114
+msgid "Link DocNet"
+msgstr "Enlace a DockNet"
+
+#: views/partials/content-single-uvigo-teacher.blade.php:31
+msgid "Dedication"
+msgstr "Dedicación"
+
+#: views/partials/content-single-uvigo-teacher.blade.php:35
+msgid "Subjects"
+msgstr "Asignaturas"
+
+#: views/partials/content-single-uvigo-teacher.blade.php:39
+msgid "Personal Web"
+msgstr "Web persoal"
+
+#: views/partials/content-single-uvigo-teacher.blade.php:43
+msgid "Teaching experience"
+msgstr "Experiencia docente"
+
+#: views/partials/content-single-uvigo-teacher.blade.php:47
+msgid "Research experience"
+msgstr "Experiencia investigadora"
+
+#: views/partials/content-single-uvigo-teacher.blade.php:51
+msgid "Professional experience"
+msgstr "Experiencia profesional"
+
+#: views/partials/content-single-uvigo-teacher.blade.php:58
+msgid "Office"
+msgstr "Despacho"
+
+#: views/partials/content-single-uvigo-teacher.blade.php:70
+msgid "Tutorials 1C"
+msgstr "Titorías 1C"
+
+#: views/partials/content-single-uvigo-teacher.blade.php:74
+msgid "Tutorials 2C"
+msgstr "Titorías 2C"
+
+#: views/partials/content-single-uvigo-teacher.blade.php:78
+msgid "Tutorials other periods"
+msgstr "Titorías Outros Períodos"
 
 #: views/partials/entry-tax.blade.php:2
 msgid "Tags"
@@ -154,7 +253,7 @@ msgstr "Buscar por:"
 msgid "News"
 msgstr "Actualidade"
 
-#: views/shortcodes/groupevents.blade.php:4
+#: views/shortcodes/groupevents.blade.php:7
 msgid "Next conference"
 msgstr "Próxima conferencia"
 
@@ -190,6 +289,10 @@ msgstr ""
 #: app/admin/customizer.php:73
 msgid "Logo mobile"
 msgstr "Logo móbil"
+
+#: app/admin/customizer.php:84
+msgid "Page Root Teachers"
+msgstr ""
 
 #: app/admin/settings.php:9
 msgid "Custom sidebars"
@@ -235,17 +338,17 @@ msgstr "O usuario pode engadir e eliminar barras laterais."
 msgid "Aditional sidebar"
 msgstr "Barra lateral adicional"
 
-#: app/admin/sidebars.php:17 app/admin/sidebars.php:44
-#: app/admin/sidebars.php:72
+#: app/admin/sidebars.php:17 app/admin/sidebars.php:40
+#: app/admin/sidebars.php:68
 msgid "None"
 msgstr "Ningún"
 
-#: app/admin/sidebars.php:42 app/admin/sidebars.php:69
-#: app/admin/sidebars.php:137
+#: app/admin/sidebars.php:38 app/admin/sidebars.php:65
+#: app/admin/sidebars.php:133
 msgid "Sidebar"
 msgstr "Barra lateral"
 
-#: app/admin/sidebars.php:71
+#: app/admin/sidebars.php:67
 msgid "&mdash; No Change &mdash;"
 msgstr "&mdash; Sen cambios &mdash;"
 
@@ -389,8 +492,7 @@ msgid "Latest Posts"
 msgstr "Últimos posts"
 
 #: app/controllers/app.php:35
-#, php-format
-msgid "Search Results for %s"
+msgid "Search Results for"
 msgstr "Resultados para %s"
 
 #: app/controllers/app.php:38
@@ -401,9 +503,10 @@ msgstr "Non atopado"
 msgid "Continued"
 msgstr "Continuar"
 
-#: app/filters.php:213
-msgid "New"
-msgstr "Nova"
+#: app/filters.php:287
+msgctxt "post_type_archive_title"
+msgid "News"
+msgstr "Novas"
 
 #: app/setup.php:62
 msgid "Primary Navigation"
@@ -433,6 +536,16 @@ msgstr "Barra lateral da Home"
 msgid "Custom sidebar created by user."
 msgstr "Barra lateral creada por usuario."
 
+#: app/update.php:73
+msgid ""
+"An Unexpected HTTP Error occurred during the API request.</p> <p><a href=\"?"
+"\" onclick=\"document.location.reload(); return false;\">Try again</a>"
+msgstr ""
+
+#: app/update.php:78
+msgid "An unknown error occurred"
+msgstr ""
+
 #: app/widgets/widget-groupevent.php:17
 msgid "Widget for GroupEvent"
 msgstr "Widget para grupos de eventos."
@@ -442,7 +555,7 @@ msgid "Group event"
 msgstr "Grupo de evento"
 
 #: app/widgets/widget-groupevent.php:53 app/widgets/widget-menu.php:79
-#: app/widgets/widget-social.php:59
+#: app/widgets/widget-news.php:107 app/widgets/widget-social.php:59
 msgid "Title:"
 msgstr "Título:"
 
@@ -457,6 +570,30 @@ msgstr "Menú de barra lateral"
 #: app/widgets/widget-menu.php:46
 msgid "Navigation"
 msgstr "Navegación"
+
+#: app/widgets/widget-news.php:17
+msgid "List latest news"
+msgstr ""
+
+#: app/widgets/widget-news.php:20
+msgid "News widget"
+msgstr ""
+
+#: app/widgets/widget-news.php:74
+msgid "(no title)"
+msgstr ""
+
+#: app/widgets/widget-news.php:111
+msgid "Number of posts to show:"
+msgstr ""
+
+#: app/widgets/widget-news.php:116
+msgid "Display thumbnail?"
+msgstr ""
+
+#: app/widgets/widget-news.php:120
+msgid "Display excerpt?"
+msgstr ""
 
 #: app/widgets/widget-social.php:17
 msgid "Define social networks on your site."
@@ -507,7 +644,7 @@ msgstr "Debe executar <code>composer install</code> dende o directorio Sage."
 msgid "Autoloader not found."
 msgstr ""
 
-#: functions.php:88
+#: functions.php:84
 #, php-format
 msgid "Error locating <code>%s</code> for inclusion."
 msgstr ""
@@ -531,6 +668,9 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "https://ideit.es/"
 msgstr ""
+
+#~ msgid "New"
+#~ msgstr "Nova"
 
 #~ msgid "Data"
 #~ msgstr "Datos"
@@ -566,9 +706,6 @@ msgstr ""
 
 #~ msgid "New Research line Name"
 #~ msgstr "Nome nova liña de investigación"
-
-#~ msgid "Research line"
-#~ msgstr "Liña Investigación"
 
 #~ msgid "Image"
 #~ msgstr "Imaxe"

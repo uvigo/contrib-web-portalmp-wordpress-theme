@@ -1,0 +1,41 @@
+// Subject
+
+article.uvigo-teacher,
+article.uvigo-subject {
+  .entry-section.general-data,
+  .entry-section.contact-data {
+    .field {
+      display: flex;
+      flex-flow: row;
+      margin-bottom: 20px;
+
+      .field__label {
+        min-width: 125px;
+        max-width: 125px;
+      }
+
+      .field__item {
+        font-weight: 300;
+
+        ol,
+        ul,
+        dl {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
+          &.uvigo_subjects {
+            margin-bottom: 10px;
+            padding-left: 10px;
+          }
+        }
+      }
+
+      &.acronym {
+        .field__item {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
