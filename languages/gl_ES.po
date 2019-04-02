@@ -203,11 +203,11 @@ msgstr "Despacho"
 
 #: views/partials/content-single-uvigo-teacher.blade.php:70
 msgid "Tutorials 1C"
-msgstr "Tutorías 1C"
+msgstr "Titorías 1C"
 
 #: views/partials/content-single-uvigo-teacher.blade.php:74
 msgid "Tutorials 2C"
-msgstr "Tutorías 2C"
+msgstr "Titorías 2C"
 
 #: views/partials/content-single-uvigo-teacher.blade.php:78
 msgid "Tutorials other periods"
