@@ -445,3 +445,14 @@ add_action('template_redirect', function () {
         die;
     }
 });
+
+/**
+ * Filtro para inyectar datos en la plantilla single de Actas
+ */
+add_filter('uvigothemewp/template/single-uvigo-act/data', function (array $data) {
+    $data['uvigo_act_taxonomy'] = get_field('uvigo_act_taxonomy');
+    $data['uvigo_act_date'] = get_field('uvigo_act_date');
+    $data['uvigo_act_documents'] = get_field('uvigo_act_documents');
+
+    return $data;
+});
