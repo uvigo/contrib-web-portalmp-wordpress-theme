@@ -422,4 +422,28 @@ class UVigoThemeWPApp extends Controller
 
         return $embed_code;
     }
+
+    public static function getTermImage($post_id = false, $taxonomy = '')
+    {
+        $url_image = false;
+
+        if (!$post_id) {
+            $post_id = get_the_ID();
+        } else {
+            $post_id = absint($post_id);
+        }
+
+        if (!$post_id) {
+            return false;
+        }
+
+        $terms_id = wp_get_post_terms($post_id, $taxonomy, array( 'fields' => 'ids' ));
+
+        if (!empty($terms_id)) {
+            $post_id = $taxonomy . '_' . $terms_id[0];
+            $url_image = get_field('uvigo_groupevent_icon', $post_id);
+        }
+
+        return $url_image;
+    }
 }
