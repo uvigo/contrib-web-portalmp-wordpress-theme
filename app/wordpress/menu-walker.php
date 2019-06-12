@@ -26,6 +26,7 @@ class UVigoMenuWalker extends Walker_Nav_Menu
         $display_depth = ($depth + 1); // because it counts the first submenu as 0
         $classes = array(
             ( $depth > 0  ? 'children' : '' ),
+            ( $depth == 0  ? 'menu-parent' : '' ),
             // ( $display_depth % 2  ? 'menu-odd' : 'menu-even' ),
             // ( $display_depth >=2 ? 'sub-sub-menu' : '' ),
             // 'menu-depth-' . $display_depth
