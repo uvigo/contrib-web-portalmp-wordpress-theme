@@ -7,10 +7,16 @@
       </div>
     @endif
     @include('partials/entry-tax')
-    @if (has_post_thumbnail())
-      <div class="entry-thumbnail">
-        {!! UVigoThemeWPApp::getThumbnailAndCaption('large') !!}
-      </div>
+    @if (UVigoThemeWPApp::hasFeaturedVideo())
+        <div class="entry-thumbnail entry-thumbnail-video">
+            {!! UVigoThemeWPApp::renderFeaturedVideo() !!}
+        </div>
+    @else
+        @if (has_post_thumbnail())
+            <div class="entry-thumbnail">
+                {!! UVigoThemeWPApp::getThumbnailAndCaption('large') !!}
+            </div>
+        @endif
     @endif
     @include('partials/entry-meta')
   </header>

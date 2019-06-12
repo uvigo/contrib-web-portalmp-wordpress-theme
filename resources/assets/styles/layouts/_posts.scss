@@ -1,3 +1,50 @@
 .entry-section {
   margin-bottom: 25px;
 }
+
+.entry-content {
+  .video-container {
+    margin-bottom: 1.75rem;
+  }
+
+  a[target="_blank"] {
+    &::after {
+      @extend %uvigo-iconfont;
+
+      content: $uvigo-iconfont-external-link;
+      margin-left: 3px;
+      font-size: 1.1em;
+      vertical-align: text-top;
+    }
+  }
+
+  a[href$=".pdf"] {
+    &::after {
+      @include eleganticon();
+
+      // content: "\e058";
+      content: "\68";
+      margin-top: 1px;
+      margin-left: 4px;
+      margin-right: 1px;
+      font-size: 1.1em;
+      vertical-align: text-top;
+    }
+  }
+
+  a[href*="/documentos/"],
+  a[href$=".doc"],
+  a[href$=".docx"] {
+    &::after {
+      @include eleganticon();
+
+      // content: "\e058";
+      content: "\68";
+      margin-top: 1px;
+      margin-left: 4px;
+      margin-right: 1px;
+      font-size: 1.1em;
+      vertical-align: text-top;
+    }
+  }
+}

@@ -119,3 +119,31 @@ article.hentry {
 .clearfloat {
   clear: both;
 }
+
+.page-development-comments {
+  background-color: rgba(255, 193, 7, 0.15);
+  border: 1px solid #dc3545;
+  padding: 15px 12px 4px 12px;
+  margin-bottom: 25px;
+  margin-top: -15px;
+  position: relative;
+
+  &::before {
+    content: "Comentarios";
+    position: absolute;
+    font-size: 0.625rem;
+    color: #999;
+    font-weight: 300;
+    background-color: #fff;
+    padding: 2px 7px 2px 7px;
+    top: -10px;
+    left: 5px;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: #333;
+    font-weight: 300;
+  }
+}
