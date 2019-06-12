@@ -288,7 +288,7 @@ class UVigoThemeWPApp extends Controller
         $terms = [];
         foreach ($taxonomies as $tax) {
             $tax_terms = get_the_terms(null, $tax);
-            if ($tax_terms) {
+            if ($tax_terms && ! is_wp_error($tax_terms)) {
                 $terms = array_merge($terms, $tax_terms);
             }
         }
