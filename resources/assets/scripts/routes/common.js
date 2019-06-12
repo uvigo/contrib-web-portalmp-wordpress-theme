@@ -83,7 +83,8 @@ export default {
 
     $('.page-content table').tableresponsive();
 
-    $('.widget-filter .widget-filter__taxonomy').on('click', 'input[type="checkbox"]', function() {
+    // $('.widget-filter .widget-filter__taxonomy').on('click', 'input[type="checkbox"]', function() {
+    $('.widget-filter .widget-filter__checkbox').on('click', 'input[type="checkbox"]', function() {
       $(this).closest('form').submit();
     });
 
