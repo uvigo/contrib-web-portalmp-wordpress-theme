@@ -1,5 +1,5 @@
 
-<div class="col-4">
+<div class="col-md-6 col-lg-4">
   <div class="featured__item card bg-graylight mb-8">
     <div class="featured__item__type card-header text-uppercase">Ofertas de emprego</div>
     <div class="card-body">
