@@ -72,6 +72,7 @@ add_action('after_setup_theme', function () {
     // add_image_size('category-thumb', 300, 9999);
     add_image_size('featured-thumbnail-2x', 1500, 844, true);
     add_image_size('featured-thumbnail', 800, 450, true);
+    add_image_size('square', 400, 400, true);
 
     /**
      * Enable HTML5 markup support
