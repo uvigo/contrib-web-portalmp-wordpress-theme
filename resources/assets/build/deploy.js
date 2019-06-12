@@ -7,7 +7,7 @@ const basePath = path.resolve('./') + '/'
 const baseFolder = 'uvigothemewp' + '/'
 
 // Package read
-const package = require(basePath + 'package.json');
+const packageInfo = require(basePath + 'package.json');
 
 // Array with files and folders
 const sources = [
@@ -31,7 +31,7 @@ const excludedFiles = ['.DS_Store'];
 
 // console.log(basePath + baseFolder);
 
-const filterFunc = (src, dest) => {
+const filterFunc = (src) => {
   return ! excludedFiles.includes(path.basename(src));
 }
 
@@ -68,7 +68,7 @@ fs.remove(basePath + baseFolder)
 })
 
 function zipFile() {
-  zip('./uvigothemewp-v' + package.version + '.zip', ['uvigothemewp/'], function(err) {
+  zip('./uvigothemewp-v' + packageInfo.version + '.zip', ['uvigothemewp/'], function(err) {
     if  (err) {
       console.error(err.stack);
       process.exit(1);

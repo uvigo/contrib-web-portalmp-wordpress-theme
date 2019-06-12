@@ -1,5 +1,3 @@
-/*eslint no-console: ["error", { allow: ["log", "warn", "error"] }] */
-
 class NavPrimary {
 
   constructor() {

@@ -55,9 +55,9 @@ function config($key = null, $default = null)
  */
 function template($file, $data = [])
 {
-    if (remove_action('wp_head', 'wp_enqueue_scripts', 1)) {
-        wp_enqueue_scripts();
-    }
+    // if (!is_admin() && remove_action('wp_head', 'wp_enqueue_scripts', 1)) {
+    //     wp_enqueue_scripts();
+    // }
 
     // echo '--' . $file;
     // print_r($data);
