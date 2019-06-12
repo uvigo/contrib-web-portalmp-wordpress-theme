@@ -7,7 +7,7 @@
       @while($featured_items->have_posts()) @php($featured_items->the_post())
         <div class="col-4">
           <div class="featured__item card mb-8">
-            <div class="featured__item__type card-header text-uppercase">{{ UVigoThemeWPApp::getPostTypeTitle(get_post_type()) }}</div>
+            <div class="featured__item__type card-header text-uppercase">{{ App::getPostTypeTitle(get_post_type()) }}</div>
             <div class="entry-thumbnail">
               <a href="{{ get_permalink() }}">
                 {!! get_the_post_thumbnail(null, 'featured-thumbnail', ['class' => 'card-img-top']) !!}

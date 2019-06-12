@@ -17,7 +17,7 @@
           <li><a href="https://secretaria.uvigo.gal/" class="elegant-icon" target="_blank"><span aria-hidden="true" class="icon_profile"></span> Secretaría</a></li>
         </ul>
         {{--
-        {!! UVigoThemeWPApp::languagesMenuSwitcher() !!}
+        {!! App::languagesMenuSwitcher() !!}
         <button type="button" id="globalsearch__toggle-button" data-toggle="search" data-target="#globalsearch" class="btn globalsearch__toggle-button" data-icon="&#x55;"><span class="sr-only">{{ _e( 'Search', 'uvigothemewp' ) }}</span></button>
         --}}
       </div>

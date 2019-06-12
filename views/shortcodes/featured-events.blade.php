@@ -1,10 +1,10 @@
 
 <div class="col-md-6 col-lg-4">
   <div class="featured__item featured__item--noback card mb-8">
-    <div class="featured__item__type card-header text-uppercase">{{ UVigoThemeWPApp::getPostTypeTitle(get_post_type()) }}</div>
+    <div class="featured__item__type card-header text-uppercase">{{ App::getPostTypeTitle(get_post_type()) }}</div>
     <div class="entry-thumbnail">
       <a href="{{ get_permalink() }}">
-        {!! UVigoThemeWPApp::getThumbnailBackground('featured-thumbnail', ['class' => 'card-img-top']) !!}
+        {!! App::getThumbnailBackground('featured-thumbnail', ['class' => 'card-img-top']) !!}
       </a>
     </div>
     <div class="card-body">

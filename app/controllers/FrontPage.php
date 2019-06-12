@@ -1,6 +1,6 @@
 <?php
 
-namespace UVigoThemeWPApp;
+namespace UVigoThemeWPApp\Controllers;
 
 use Sober\Controller\Controller;
 

@@ -2,4 +2,4 @@
     @php(dynamic_sidebar('sidebar-primary'))
 @endif
 
-{!! UVigoThemeWPApp::getSidebarUsed() !!}
+{!! App::getSidebarUsed() !!}

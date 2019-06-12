@@ -98,7 +98,7 @@ class UVigoMenuWalker extends Walker_Nav_Menu
             $classes = empty($item->classes) ? array() : (array) $item->classes;
             $class_names = esc_attr(implode(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item)));
 
-            // UVigoThemeWPApp::errorLog($classes);
+            // App::errorLog($classes);
             // if (!in_array('current-menu-ancestor', $classes)) {
             //     return '';
             // }
@@ -116,7 +116,7 @@ class UVigoMenuWalker extends Walker_Nav_Menu
 
             // Build HTML output and pass through the proper filter.
             $item_output = '<div class="menu-item-link">';
-            // UVigoThemeWPApp::errorLog($args->walker->has_children);
+            // App::errorLog($args->walker->has_children);
             if ($args->walker->has_children) {
                 $item_output .= '<span class="menu-icon-more"><span class="sr-only">' . __('Open', 'uvigothemewp') . '</span></span>';
             } else {

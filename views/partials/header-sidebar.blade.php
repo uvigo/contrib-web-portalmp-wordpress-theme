@@ -1,4 +1,4 @@
-{!! UVigoThemeWPApp::languagesMenuSwitcher() !!}
+{!! App::languagesMenuSwitcher() !!}
 
 @php(dynamic_sidebar('sidebar-header'))
 

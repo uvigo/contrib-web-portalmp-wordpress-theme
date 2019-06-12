@@ -9,12 +9,12 @@
     @include('partials/entry-tax')
     @if (has_post_thumbnail())
       <div class="entry-thumbnail">
-        {!! UVigoThemeWPApp::getThumbnailAndCaption('large') !!}
+        {!! App::getThumbnailAndCaption('large') !!}
       </div>
     @endif
     <div class="entry-meta">
       <span class="entry-type">{{ get_post_meta(get_the_ID(), 'uvigo_offers_offer_reference', true) }}</span>
-      <span class="entry-type">| {{ UVigoThemeWPApp::getPostTypeTitle(get_post_type()) }}</span>
+      <span class="entry-type">| {{ App::getPostTypeTitle(get_post_type()) }}</span>
     </div>
   </header>
   <div class="entry-content page-content">

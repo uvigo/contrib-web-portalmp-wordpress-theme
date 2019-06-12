@@ -7,7 +7,7 @@
           <div class="brand-header">
             @if (function_exists('the_custom_logo'))
               <div class="brand-logo">{!! the_custom_logo() !!}</div>
-              <div class="brand-mobile-logo">{!! UVigoThemeWPApp::theCustomMobileLogo() !!}</div>
+              <div class="brand-mobile-logo">{!! App::theCustomMobileLogo() !!}</div>
             @endif
           </div>
 

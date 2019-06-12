@@ -8,7 +8,7 @@
 
   @if (has_post_thumbnail())
     <div class="page-thumbnail">
-      {!! UVigoThemeWPApp::getThumbnailAndCaption('large') !!}
+      {!! App::getThumbnailAndCaption('large') !!}
     </div>
   @endif
 

@@ -41,6 +41,15 @@ if (version_compare('4.9.0', get_bloginfo('version'), '>=')) {
     $sage_error(__('You must be using WordPress 4.9.0 or greater.', 'uvigothemewp'), __('Invalid WordPress version', 'uvigothemewp'));
 }
 
+add_filter('sober/controller/sage/namespace', function () {
+    return 'UVigoThemeWPApp';
+});
+add_filter('sober/controller/namespace', function () {
+    return 'UVigoThemeWPApp\Controllers';
+});
+
+
+
 /**
  * Write to log function
  */

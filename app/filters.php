@@ -31,7 +31,7 @@ add_filter('body_class', function (array $classes) {
  */
 collect([
     'index', '404', 'archive', 'author', 'category', 'tag', 'taxonomy', 'date', 'home',
-    'frontpage', 'page', 'paged', 'search', 'single', 'singular', 'attachment'
+    'frontpage', 'page', 'paged', 'search', 'single', 'singular', 'attachment', 'embed'
 ])->map(function ($type) {
     add_filter("{$type}_template_hierarchy", __NAMESPACE__ . '\\filter_templates');
 });
@@ -186,7 +186,6 @@ add_filter('wp_nav_menu_objects', function ($sorted_menu_items, $args) {
         }
 
         if (is_singular(['uvigo-subject'])) {
-
             //titulacion
             $subjects_root_page_id = apply_filters('uvigo_teaching_certification_subjects_root_page', null, get_the_ID());
             if ($subjects_root_page_id) {

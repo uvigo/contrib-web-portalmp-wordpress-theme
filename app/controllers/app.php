@@ -1,10 +1,10 @@
 <?php
 
-namespace UVigoThemeWPApp;
+namespace UVigoThemeWPApp\Controllers;
 
 use Sober\Controller\Controller;
 
-class UVigoThemeWPApp extends Controller
+class App extends Controller
 {
     public static function errorLog($log)
     {
@@ -207,7 +207,7 @@ class UVigoThemeWPApp extends Controller
     /** Recuperación del logo de movil. */
     public static function theCustomMobileLogo()
     {
-        echo UVigoThemeWPApp::getCustomMobileLogo();
+        echo App::getCustomMobileLogo();
     }
 
     public static function getCustomMobileLogo($blog_id = 0)

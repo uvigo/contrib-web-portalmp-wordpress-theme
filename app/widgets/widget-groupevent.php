@@ -6,7 +6,6 @@ use WP_Widget;
 
 class UVigoGroupEventWidget extends WP_Widget
 {
-
     /**
      * Sets up the widgets name etc
      */

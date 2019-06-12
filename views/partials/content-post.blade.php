@@ -2,7 +2,7 @@
   <header>
     @if (has_post_thumbnail())
       <a href="{{ get_permalink() }}" class="d-block mb-2">
-        {!! UVigoThemeWPApp::getThumbnailBackground('square') !!}
+        {!! App::getThumbnailBackground('square') !!}
       </a>
     @endif
     @include('partials/entry-meta')

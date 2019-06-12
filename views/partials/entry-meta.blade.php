@@ -5,5 +5,5 @@
   </p>
   --}}
   <time class="updated" datetime="{{ get_post_time('c', true) }}">{{ get_the_date() }}</time>
-  <span class="entry-type">| {{ UVigoThemeWPApp::getPostTypeTitle(get_post_type()) }}</span>
+  <span class="entry-type">| {{ App::getPostTypeTitle(get_post_type()) }}</span>
 </div>

@@ -10,7 +10,7 @@
     {{-- @include('partials/entry-tax') --}}
     @if (has_post_thumbnail())
       <div class="entry-thumbnail">
-        {!! UVigoThemeWPApp::getThumbnailAndCaption('large') !!}
+        {!! App::getThumbnailAndCaption('large') !!}
       </div>
     @endif
   </header>
@@ -28,7 +28,7 @@
       <span class="field__item">{{ the_field('uvigo_teaching_teacher_job_area') }}</span>
     </div>
     <div class="field">
-      @php( $fieldDedication = get_field_object('uvigo_teaching_teacher_job_dedication') )  
+      @php( $fieldDedication = get_field_object('uvigo_teaching_teacher_job_dedication') )
       @php( $fieldDedicationLabel = $fieldDedication['choices'][ $fieldDedication['value'] ] )
       <span class="field__label">{{ __('Dedication', 'uvigothemewp') }}: </span>
       <span class="field__item">{{ $fieldDedicationLabel }}</span>

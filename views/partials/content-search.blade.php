@@ -1,7 +1,7 @@
 <article @php(post_class('mb-8'))>
   <header>
     <div class="entry-meta mb-2">
-          <span class="entry-type">{{ UVigoThemeWPApp::getPostTypeTitle(get_post_type()) }}</span>
+          <span class="entry-type">{{ App::getPostTypeTitle(get_post_type()) }}</span>
           @if (get_post_type() === 'post')
             <time class="updated" datetime="{{ get_post_time('c', true) }}">| {{ get_the_date() }}</time>
           @endif

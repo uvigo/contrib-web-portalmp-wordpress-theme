@@ -3,7 +3,7 @@
     <h1 class="entry-title">{{ get_the_title() }}</h1>
     <div class="entry-meta">
       <time class="updated text-secondary font-weight-500">{{ $uvigo_act_date }}</time>
-      <span class="entry-type">| {{ UVigoThemeWPApp::getPostTypeTitle(get_post_type()) }}</span>
+      <span class="entry-type">| {{ App::getPostTypeTitle(get_post_type()) }}</span>
       <span class="entry-type">| {{ $uvigo_act_taxonomy->name }}</span>
     </div>
   </header>

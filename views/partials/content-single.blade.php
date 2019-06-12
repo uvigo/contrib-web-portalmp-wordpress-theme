@@ -7,14 +7,14 @@
       </div>
     @endif
     @include('partials/entry-tax')
-    @if (UVigoThemeWPApp::hasFeaturedVideo())
+    @if (App::hasFeaturedVideo())
         <div class="entry-thumbnail entry-thumbnail-video">
-            {!! UVigoThemeWPApp::renderFeaturedVideo() !!}
+            {!! App::renderFeaturedVideo() !!}
         </div>
     @else
         @if (has_post_thumbnail())
             <div class="entry-thumbnail">
-                {!! UVigoThemeWPApp::getThumbnailAndCaption('large') !!}
+                {!! App::getThumbnailAndCaption('large') !!}
             </div>
         @endif
     @endif

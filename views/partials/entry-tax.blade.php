@@ -5,7 +5,7 @@
 @php(the_terms(null, 'geographic', '<div class="tag-list"><span>' . __('Geographic', 'uvigothemewp') . '</span><ul class="geographic"><li class="tag-list__item">', '</li><li class="tag-list__item">', '</li></ul></div>'))
 --}}
 
-@php($terms = UVigoThemeWPApp::getTerms(['post_tag', 'spectator', 'universe', 'geographic']))
+@php($terms = App::getTerms(['post_tag', 'spectator', 'universe', 'geographic']))
 @if($terms)
     <div class="entry-tax">
         <div class="tag-list">

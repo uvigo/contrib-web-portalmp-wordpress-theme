@@ -6,7 +6,7 @@
     @include('partials.header')
     <div class="wrap container" role="document">
       <div class="content">
-        {!! UVigoThemeWPApp::breadcrumb() !!}
+        {!! App::breadcrumb() !!}
         <main class="main">
           @yield('content')
         </main>
