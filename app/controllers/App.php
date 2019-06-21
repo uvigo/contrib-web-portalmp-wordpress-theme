@@ -104,6 +104,13 @@ class App extends Controller
                     'title' => get_post_type_object('uvigo-offer')->label,
                     'link'  => get_post_type_archive_link('uvigo-offer')
                 ];
+            } elseif (is_singular('uvigo-practice')) {
+                $post_id = $post->ID;
+                $actual_title = self::theTerms($post_id, 'uvigo-tax-practice');
+                $ancestors[] = [
+                    'title' => get_post_type_object('uvigo-practice')->label,
+                    'link'  => get_post_type_archive_link('uvigo-practice')
+                ];
             } elseif (is_singular(['uvigo-teacher'])) {
                 $teachers_page = get_theme_mod('uvigothemewp_sfp_teachers_setting');
                 if ($teachers_page) {
@@ -343,7 +350,7 @@ class App extends Controller
                 $class .= $attr['class'];
             }
             echo '<div class="unresize-thumbnail" style="background-image: url(\'' . get_the_post_thumbnail_url(null, $size) . '\');">';
-            echo '<img src="' . asset_path("images/empty-${width}x${height}.png") . '" class="' . $class . '" width="' . $width . '" height="' . $height . '" alt="' . esc_attr(get_the_title()) . '">';
+            echo '<img src="' . \UVigoThemeWPApp\asset_path("images/empty-${width}x${height}.png") . '" class="' . $class . '" width="' . $width . '" height="' . $height . '" alt="' . esc_attr(get_the_title()) . '">';
             echo '</div>';
         } else {
             echo get_the_post_thumbnail(null, $size, $attr);
