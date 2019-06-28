@@ -453,4 +453,9 @@ class App extends Controller
 
         return $url_image;
     }
+
+    public static function getFileTypeAlias($file_type)
+    {
+        return $file_type_alias = apply_filters('wpcoreuvigo_acf_file_subtype_alias', $file_type);
+    }
 }

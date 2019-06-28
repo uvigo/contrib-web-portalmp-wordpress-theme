@@ -455,3 +455,14 @@ add_filter('uvigothemewp/template/single-uvigo-act/data', function (array $data)
 
     return $data;
 });
+
+/**
+ * Filtro para inyectar datos en la plantilla single de Formularios
+ */
+add_filter('uvigothemewp/template/single-uvigo-form/data', function (array $data) {
+    $data['uvigo_form_taxonomy'] = get_field('uvigo_form_taxonomy');
+    $data['uvigo_form_document_pdf'] = get_field('uvigo_form_document_pdf');
+    $data['uvigo_form_document_doc'] = get_field('uvigo_form_document_doc');
+    $data['uvigo_form_document_odt'] = get_field('uvigo_form_document_odt');
+    return $data;
+});

@@ -53,6 +53,21 @@
   }
 }
 
+ul {
+  &.list-inline {
+    display: inline;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+
+    li {
+      padding-left: 5px;
+      display: inline;
+      background-image: none;
+    }
+  }
+}
+
 article.hentry {
   .field {
     margin-bottom: 0.375rem;
