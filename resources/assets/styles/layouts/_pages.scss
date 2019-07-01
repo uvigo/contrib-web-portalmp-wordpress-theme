@@ -15,7 +15,10 @@
     }
   }
 
-  a[href$=".pdf"] {
+  a[href$=".pdf"],
+  a[href$=".odt"],
+  a[href$=".doc"],
+  a[href$=".docx"] {
     &::after {
       @include eleganticon();
 

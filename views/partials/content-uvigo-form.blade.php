@@ -5,16 +5,16 @@
     <div class="list-feed-item-preline">
         {!! App::theTerms(get_the_ID(), 'uvigo-tax-form', ' <span class="text-uppercase">', '</span> | <span class="text-uppercase">', '</span>') !!}
     </div>
-    <a class="list-feed-item-link" href="{{ get_permalink() }}">{{ get_the_title() }}</a>
+    <span class="list-feed-item-link">{{ get_the_title() }}</span>
     <ul class="list-inline">
         @if($uvigo_form_document_doc)
-            <li><a target="_blank" href="{{ $uvigo_form_document_doc['url'] }}">(<span class="text-lowercase">{{ App::getFileTypeAlias($uvigo_form_document_doc['subtype']) }}</span>)</a></li>
+            <li><a target="_blank" title="{{ get_the_title() }}" href="{{ $uvigo_form_document_doc['url'] }}">(<span class="text-lowercase">{{ App::getFileTypeAlias($uvigo_form_document_doc['subtype']) }}</span>)</a></li>
         @endif
         @if($uvigo_form_document_odt)
-            <li><a target="_blank" href="{{ $uvigo_form_document_odt['url'] }}">(<span class="text-lowercase">{{ App::getFileTypeAlias($uvigo_form_document_odt['subtype']) }}</span>)</a></li>
+            <li><a target="_blank" title="{{ get_the_title() }}" href="{{ $uvigo_form_document_odt['url'] }}">(<span class="text-lowercase">{{ App::getFileTypeAlias($uvigo_form_document_odt['subtype']) }}</span>)</a></li>
         @endif
         @if($uvigo_form_document_pdf)
-            <li><a target="_blank" href="{{ $uvigo_form_document_pdf['url'] }}">(<span class="text-lowercase">{{ App::getFileTypeAlias($uvigo_form_document_pdf['subtype']) }}</span>)</a></li>
+            <li><a target="_blank" title="{{ get_the_title() }}" href="{{ $uvigo_form_document_pdf['url'] }}">(<span class="text-lowercase">{{ App::getFileTypeAlias($uvigo_form_document_pdf['subtype']) }}</span>)</a></li>
         @endif
     </ul>
 </article>
